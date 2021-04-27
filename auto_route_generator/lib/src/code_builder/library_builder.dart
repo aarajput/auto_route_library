@@ -24,7 +24,7 @@ String generateLibrary(RouterConfig config) {
   final emitter = DartEmitter(
     allocator: Allocator.simplePrefixing(),
     orderDirectives: true,
-    useNullSafetySyntax: true,
+    useNullSafetySyntax: false,
   );
 
   var allRouters = config.collectAllRoutersIncludingParent;
